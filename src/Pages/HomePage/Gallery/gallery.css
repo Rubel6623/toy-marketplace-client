@@ -1,0 +1,17 @@
+/* .title::before{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 17px;
+    content: "";
+    background: none;
+    width: 100%;
+    height: 4px;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: bisque;
+} */
+
+.title{
+    color: rgb(43, 43, 230);
+}
