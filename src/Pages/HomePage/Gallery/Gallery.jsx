@@ -2,7 +2,7 @@ import "./gallery.css";
 
 const Gallery = () => {
   return (
-    <div>
+    <div className="mb-12">
       <h2 className="text-4xl font-bold text-center my-12"> Toys Collection </h2>
       <div className=" grid md:grid-cols-3 lg:grid-cols-4 md:gap-6 gap-6">
         {/* card-1 */}
