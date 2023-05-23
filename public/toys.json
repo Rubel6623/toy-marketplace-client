@@ -2,7 +2,7 @@
     {
       "id": 1,
       "toyName": "Teddy Bear",
-      "toyImg": "https://example.com/toy_image1.jpg",
+      "toyImg": "https://m.media-amazon.com/images/I/71dK-fJlqSL._SX679_.jpg",
       "price": 19.99,
       "rating": 4.5,
       "sellerName": "Toy World",
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "toyName": "Building Blocks",
-      "toyImg": "https://example.com/toy_image2.jpg",
+      "toyImg": "https://ae01.alicdn.com/kf/HTB1leEGLSzqK1RjSZFjq6zlCFXay/STEM-Blocks-Technical-Building-Block-Science-Toy-DIY-Blocks-Kit-Mechanical-Engineering-Educational-for-Kids-Gift.jpg",
       "price": 24.99,
       "rating": 4.2,
       "sellerName": "Toy Universe",
@@ -22,7 +22,7 @@
     {
       "id": 3,
       "toyName": "Dollhouse",
-      "toyImg": "https://example.com/toy_image3.jpg",
+      "toyImg": "https://images.othoba.com/images/thumbs/0354602_kids-wooden-puzzle-toys.jpeg",
       "price": 39.99,
       "rating": 4.7,
       "sellerName": "Toy Emporium",
