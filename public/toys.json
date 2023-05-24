@@ -1,33 +1,33 @@
 [
     {
-      "id": 1,
-      "toyName": "Teddy Bear",
+      "toyName": "Kids Engineering Tools",
       "toyImg": "https://m.media-amazon.com/images/I/71dK-fJlqSL._SX679_.jpg",
       "price": 19.99,
       "rating": 4.5,
       "sellerName": "Toy World",
-      "toySubCategory": "Stuffed Animals",
-      "quantityAvailable": 10
+      "toySubCategory": "engineering kits",
+      "quantityAvailable": 10,
+      "description": "A soft and cuddly teddy bear that is perfect for snuggling and comforting."
     },
     {
-      "id": 2,
-      "toyName": "Building Blocks",
+      "toyName": "Technical Building Kits",
       "toyImg": "https://ae01.alicdn.com/kf/HTB1leEGLSzqK1RjSZFjq6zlCFXay/STEM-Blocks-Technical-Building-Block-Science-Toy-DIY-Blocks-Kit-Mechanical-Engineering-Educational-for-Kids-Gift.jpg",
       "price": 24.99,
       "rating": 4.2,
       "sellerName": "Toy Universe",
-      "toySubCategory": "Educational Toys",
-      "quantityAvailable": 5
+      "toySubCategory": "engineering kits",
+      "quantityAvailable": 5,
+      "description": "A set of colorful building blocks that encourage creativity and problem-solving skills."
     },
     {
-      "id": 3,
-      "toyName": "Dollhouse",
-      "toyImg": "https://images.othoba.com/images/thumbs/0354602_kids-wooden-puzzle-toys.jpeg",
+      "toyName": "Electronic Toys",
+      "toyImg": "https://img.fruugo.com/product/2/47/158969472_max.jpg",
       "price": 39.99,
       "rating": 4.7,
       "sellerName": "Toy Emporium",
-      "toySubCategory": "Imaginative Play",
-      "quantityAvailable": 3
+      "toySubCategory": "engineering kits",
+      "quantityAvailable": 3,
+      "description": "A beautifully designed dollhouse that provides hours of imaginative play and storytelling."
     }
   ]
   

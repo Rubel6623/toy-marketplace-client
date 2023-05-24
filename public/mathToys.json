@@ -1,0 +1,33 @@
+[
+    {
+      "toyName": "Kids Math Toy",
+      "toyImg": "https://www.mother.ly/wp-content/uploads/legacy-images/math-toys-for-preschoolers-8.jpg",
+      "price": 19.99,
+      "rating": 4.5,
+      "sellerName": "Toy World",
+      "toySubCategory": "math learning toys",
+      "quantityAvailable": 10,
+      "description": "A soft and cuddly teddy bear that is perfect for snuggling and comforting."
+    },
+    {
+      "toyName": "Montessori Educational Wooden Math Toy",
+      "toyImg": "https://ae01.alicdn.com/kf/S55596a9f4b1142a29cee1dd5282fd7696/Montessori-Educational-Wooden-Math-Toy-Rainbow-Circle-Digital-Color-Shapes-Wood-Geometric-Baby-Early-Learning-Toys.jpg",
+      "price": 24.99,
+      "rating": 4.2,
+      "sellerName": "Toy Universe",
+      "toySubCategory": "math learning toys",
+      "quantityAvailable": 5,
+      "description": "A set of colorful building blocks that encourage creativity and problem-solving skills."
+    },
+    {
+      "toyName": "Math Learning Cylinder",
+      "toyImg": "https://www.mytrendyphone.eu/images/Math-Learning-Cylinder-Educational-Toy-Kids-01042021-03-p.webp",
+      "price": 39.99,
+      "rating": 4.7,
+      "sellerName": "Toy Emporium",
+      "toySubCategory": "math learning toys",
+      "quantityAvailable": 3,
+      "description": "A beautifully designed dollhouse that provides hours of imaginative play and storytelling."
+    }
+  ]
+  

@@ -1,0 +1,82 @@
+[
+    {
+      "toyName": "Kids Engineering Tools",
+      "toyImg": "https://m.media-amazon.com/images/I/71dK-fJlqSL._SX679_.jpg",
+      "price": 19.99,
+      "rating": 4.5,
+      "sellerName": "Toy World",
+      "toySubCategory": "engineering kits",
+      "quantityAvailable": 10,
+      "description": "A soft and cuddly teddy bear that is perfect for snuggling and comforting."
+    },
+    {
+      "toyName": "Technical Building Kits",
+      "toyImg": "https://ae01.alicdn.com/kf/HTB1leEGLSzqK1RjSZFjq6zlCFXay/STEM-Blocks-Technical-Building-Block-Science-Toy-DIY-Blocks-Kit-Mechanical-Engineering-Educational-for-Kids-Gift.jpg",
+      "price": 24.99,
+      "rating": 4.2,
+      "sellerName": "Toy Universe",
+      "toySubCategory": "engineering kits",
+      "quantityAvailable": 5,
+      "description": "A set of colorful building blocks that encourage creativity and problem-solving skills."
+    },
+    {
+      "toyName": "Electronic Toys",
+      "toyImg": "https://img.fruugo.com/product/2/47/158969472_max.jpg",
+      "price": 39.99,
+      "rating": 4.7,
+      "sellerName": "Toy Emporium",
+      "toySubCategory": "engineering kits",
+      "quantityAvailable": 3,
+      "description": "A beautifully designed dollhouse that provides hours of imaginative play and storytelling."
+    },    {
+        "toyName": "Kids Math Toy",
+        "toyImg": "https://www.mother.ly/wp-content/uploads/legacy-images/math-toys-for-preschoolers-8.jpg",
+        "price": 19.99,
+        "rating": 4.5,
+        "sellerName": "Toy World",
+        "toySubCategory": "math learning toys",
+        "quantityAvailable": 10,
+        "description": "A soft and cuddly teddy bear that is perfect for snuggling and comforting."
+      },
+      {
+        "toyName": "Montessori Educational Wooden Math Toy",
+        "toyImg": "https://ae01.alicdn.com/kf/S55596a9f4b1142a29cee1dd5282fd7696/Montessori-Educational-Wooden-Math-Toy-Rainbow-Circle-Digital-Color-Shapes-Wood-Geometric-Baby-Early-Learning-Toys.jpg",
+        "price": 24.99,
+        "rating": 4.2,
+        "sellerName": "Toy Universe",
+        "toySubCategory": "math learning toys",
+        "quantityAvailable": 5,
+        "description": "A set of colorful building blocks that encourage creativity and problem-solving skills."
+      },
+      {
+        "toyName": "Math Learning Cylinder",
+        "toyImg": "https://www.mytrendyphone.eu/images/Math-Learning-Cylinder-Educational-Toy-Kids-01042021-03-p.webp",
+        "price": 39.99,
+        "rating": 4.7,
+        "sellerName": "Toy Emporium",
+        "toySubCategory": "math learning toys",
+        "quantityAvailable": 3,
+        "description": "A beautifully designed dollhouse that provides hours of imaginative play and storytelling."
+      },
+      {
+        "toyName": "Science kit toy",
+        "toyImg": "https://i5.walmartimages.com/asr/ab227941-b0d6-4e59-888d-14d5d63a5aa3.87c9fb5b9fd04e86404b81be009ed281.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+        "price": 39.99,
+        "rating": 4.7,
+        "sellerName": "Toy Emporium",
+        "toySubCategory": "science kit",
+        "quantityAvailable": 3,
+        "description": "A beautifully designed dollhouse that provides hours of imaginative play and storytelling."
+      },
+      {
+        "toyName": "X TOYZ Science Kit, ",
+        "toyImg": "https://m.media-amazon.com/images/I/71jcgvJ99dL.jpg",
+        "price": 39.99,
+        "rating": 4.7,
+        "sellerName": "Toy Emporium",
+        "toySubCategory": "science kit",
+        "quantityAvailable": 3,
+        "description": "A beautifully designed dollhouse that provides hours of imaginative play and storytelling."
+      }
+  ]
+  

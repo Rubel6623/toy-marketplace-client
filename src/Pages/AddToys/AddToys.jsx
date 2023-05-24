@@ -1,10 +1,34 @@
 // bg-[#F4F3F0]
 
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+
 const AddToys = () => {
+  const {user}=useContext(AuthContext);
+
+  const handleAddToy=(event)=>{
+    event.preventDefault();
+
+    const form=event.target;
+    const toyName=form.name.value;
+    const category=form.category.value;
+    const seller=form.seller.value;
+    const quantity=form.quantity.value;
+    const email=form.email.value;
+    const price=form.price.value;
+    const url=form.url.value;
+    const rating=form.rating.value;
+    const details=form.details.value;
+
+    const toys={toyName,category,seller,quantity,email,price,url,rating,details};
+    console.log(toys);
+
+  }
+
     return (
         <div className="p-24">
         <h2 className="text-3xl font-extrabold">Add a Toy</h2>
-        <form >
+        <form onSubmit={handleAddToy}>
   
           <div className="md:flex mb-8">
             <div className="form-control md:w-1/2">
@@ -27,7 +51,7 @@ const AddToys = () => {
               <label className="input-group">
                 <input
                   type="text"
-                  name="Category"
+                  name="category"
                   placeholder="Category"
                   className="input input-bordered w-full"
                 />
@@ -45,7 +69,7 @@ const AddToys = () => {
                 <input
                   type="text"
                   name="seller"
-                  placeholder="seller"
+                  defaultValue={user?.displayName}
                   className="input input-bordered w-full"
                 />
               </label>
@@ -75,7 +99,7 @@ const AddToys = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="seller email"
+                  defaultValue={user?.email}
                   className="input input-bordered w-full"
                 />
               </label>
@@ -142,10 +166,11 @@ const AddToys = () => {
           </div>
           <input
             type="submit"
-            value="Add Coffee"
+            value="Add Toy"
             className="btn  btn-info btn-block"
           />
         </form>
+
       </div>
     );
 };

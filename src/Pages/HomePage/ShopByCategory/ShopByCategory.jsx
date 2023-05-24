@@ -2,14 +2,22 @@ import { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import ToysCard from './ToysCard';
+import MathToyCard from './MathToyCard';
 
 const ShopByCategory = () => {
   const [toys,setToys]=useState([]);
+  const [mathToys,setMathToys]=useState([]);
 
   useEffect(()=>{
-    fetch('toys.json')
+    fetch('http://localhost:5000/toys')
     .then(res=>res.json())
     .then(data=>setToys(data))
+  },[])
+
+  useEffect(()=>{
+    fetch('http://localhost:5000/mathToys')
+    .then(res=>res.json())
+    .then(data=>setMathToys(data))
   },[])
 
     return (
@@ -21,7 +29,7 @@ const ShopByCategory = () => {
 
           <Tab className={'bg-[#ff6799] rounded-3xl '}>
             <button className='btn btn-outline  rounded-3xl px-12'>
-                Science kits
+            engineering kits
             </button>
           </Tab>
 
@@ -33,7 +41,7 @@ const ShopByCategory = () => {
 
           <Tab className={' bg-[#ff6799] rounded-3xl '}>
             <button className='btn btn-outline rounded-3xl px-12'>
-            engineering kits
+            Science kits
             </button>
           </Tab>
 
@@ -42,17 +50,28 @@ const ShopByCategory = () => {
         <TabPanel>
           <div className='grid md:grid-cols-3 gap-6'>
           {
-            toys.map(toy=><ToysCard key={toy.id} toy={toy}></ToysCard>)
+            toys.map(toy=><ToysCard key={toy._id} toy={toy}></ToysCard>)
           }
           </div>
         </TabPanel>
 
         <TabPanel>
-          <h2>Any content 2</h2>
+          <div className='grid md:grid-cols-3 gap-6'>
+            {
+              mathToys.map(mathToy=><MathToyCard 
+                key={mathToy._id} 
+                mathToy={mathToy}
+              ></MathToyCard>)
+            }
+          </div>
         </TabPanel>
 
         <TabPanel>
-          <h2>Any content 3</h2>
+        <div className='grid md:grid-cols-3 gap-6'>
+          {
+            toys.map(toy=><ToysCard key={toy._id} toy={toy}></ToysCard>)
+          }
+          </div>
         </TabPanel>
 
       </Tabs>

@@ -1,13 +1,22 @@
 import { Link } from "react-router-dom";
 import logo from '../../../assets/image/toy3.png';
+import { useContext } from "react";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
 
 const Header = () => {
+  const {user,logOut}=useContext(AuthContext);
+
+  const handleLogOut=()=>{
+    logOut()
+    .then(()=>{})
+    .catch(error=>console.log(error))
+  }
 
   const navItems=<>
   <li><Link className="text-lg font-semibold">Home</Link></li>
-  <li><Link className="text-lg font-semibold">All Toys</Link></li>
-  <li><Link className="text-lg font-semibold">My Toys</Link></li>
+  <li><Link to='/allToys' className="text-lg font-semibold">All Toys</Link></li>
+  <li>{user&&<Link className="text-lg font-semibold">My Toys</Link>}</li>
   <li><Link to='/addtoys' className="text-lg font-semibold">Add A Toys</Link></li>
   <li><Link className="text-lg font-semibold">Blogs</Link></li>
   </>
@@ -38,7 +47,14 @@ const Header = () => {
   </div>
 
   <div className="navbar-end">
-    <a className="btn">User Profile</a>
+    {user?.email?
+    <>
+    <img className="w-12 rounded-full tooltip" src={user.photoURL} data-tip='hello' alt="" />
+    <button className="btn btn-outline ml-2" onClick={handleLogOut}>Log Out</button>
+    </>:
+      <Link to='/login'>Login</Link>
+      
+    }
   </div>
 </div>
   );
