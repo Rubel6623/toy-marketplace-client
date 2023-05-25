@@ -21,11 +21,11 @@ const ShopByCategory = () => {
   },[])
 
     return (
-        <div className='text-center'>
+        <div className='text-center mt-5'>
             <h2 className='text-4xl font-semibold text-center mb-6'>Shop by Category</h2>
         <Tabs className={''}>
 
-        <TabList className={'flex gap-6 place-content-center'}>
+        <TabList className={'flex gap-6 place-content-center mb-12'}>
 
           <Tab className={'bg-[#ff6799] rounded-3xl '}>
             <button className='btn btn-outline  rounded-3xl px-12'>

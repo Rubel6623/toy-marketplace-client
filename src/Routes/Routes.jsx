@@ -9,6 +9,7 @@ import MathToys from "../Pages/ToyDetails/MathToys";
 import AllToys from "../Pages/AllToys/AllToys";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import AllToyDetails from "../Pages/ToyDetails/AllToyDetails";
 
 
 const router = createBrowserRouter([
@@ -45,8 +46,13 @@ const router = createBrowserRouter([
         },
         {
           path:'/mathToys/:id',
-          element:<MathToys></MathToys>,
+          element:<PrivateRoute><MathToys></MathToys></PrivateRoute>,
           loader:({params})=>fetch(`http://localhost:5000/mathToys/${params.id}`)
+        },
+        {
+          path:'/allToys/:id',
+          element:<PrivateRoute><AllToyDetails></AllToyDetails></PrivateRoute>,
+          loader:({params})=>fetch(`http://localhost:5000/allToys/${params.id}`)
         }
       ]
     },

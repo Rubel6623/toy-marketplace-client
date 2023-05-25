@@ -11,14 +11,12 @@ const AllToys = () => {
         <thead>
           <tr>
             <th>
-              <label>
-                <input type="checkbox" className="checkbox" />
-              </label>
             </th>
-            <th>Name</th>
-            <th>Job</th>
-            <th>Favorite Color</th>
-            <th></th>
+            <th>Name & Image</th>
+            <th>Sub-Category</th>
+            <th>Seller</th>
+            <th>Price</th>
+            <th>Details</th>
           </tr>
         </thead>
 

@@ -1,4 +1,5 @@
 // bg-[#F4F3F0]
+import Swal from 'sweetalert2';
 
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -20,8 +21,30 @@ const AddToys = () => {
     const rating=form.rating.value;
     const details=form.details.value;
 
-    const toys={toyName,category,seller,quantity,email,price,url,rating,details};
-    console.log(toys);
+    const newToy={toyName,category,seller,quantity,email,price,url,rating,details};
+    console.log(newToy);
+
+    // send data to the server
+
+    fetch('http://localhost:5000/toy', {
+      method: 'POST',
+      headers:{
+        'content-type':'application/json'
+      },
+      body:JSON.stringify(newToy)
+    })
+    .then(res=>res.json())
+    .then(data=> {
+      console.log(data);
+      if(data.insertedId){
+        Swal.fire({
+          title: 'Success !',
+          text: 'Toy Added Successfully',
+          icon: 'success',
+          confirmButtonText: 'Cool'
+        })
+      }
+    })
 
   }
 
