@@ -6,7 +6,6 @@ const AllToyRow = ({toy}) => {
     const {_id,toyName,toyImg,price,sellerName,toySubCategory,rating,quantityAvailable}=toy;
     console.log(toy);
   return (
-
       <tr>
         <th>
         <button className="btn btn-circle btn-outline">

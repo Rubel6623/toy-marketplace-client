@@ -43,6 +43,7 @@ const AddToys = () => {
           icon: 'success',
           confirmButtonText: 'Cool'
         })
+        form.reset();
       }
     })
 
