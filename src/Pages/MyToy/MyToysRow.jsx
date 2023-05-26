@@ -83,7 +83,7 @@ const MyToysRow = ({ toy }) => {
       <td>${price}</td>
 
       <th>
-        <Link className="btn btn-ghost">Update</Link>
+        <Link to={`/updateToy/${_id}`} className="btn btn-ghost">Update</Link>
       </th>
     </tr>
   );
