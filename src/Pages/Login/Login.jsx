@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import img from "../../assets/login/login.svg";
 import { FaGoogle } from "react-icons/fa";
 import { useContext, useState } from "react";
@@ -11,6 +11,10 @@ const Login = () => {
   const [error, setError] = useState("");
 
   const { signIn, GoogleSignIn } = useContext(AuthContext);
+  const navigate=useNavigate();
+  const location=useLocation();
+
+  const from = location.state?.from?.pathname || "/";
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -25,6 +29,7 @@ const Login = () => {
         const user = result.user;
         console.log(user);
         form.reset();
+        navigate(from, {replace:true});
         setError('')
       })
       .catch((error) => setError(error.message));
@@ -36,6 +41,7 @@ const Login = () => {
         const loggedUser = result.user;
         console.log(loggedUser);
         setUser(loggedUser);
+        navigate(from, {replace:true});
       })
       .catch((error) => {
         console.error(error);

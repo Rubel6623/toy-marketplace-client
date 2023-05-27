@@ -31,7 +31,7 @@ const Footer = () => {
           <img className='w-16 h-16 rounded-full' src={logo} alt="" />
           <Link>
             <h3 className='text-xl font-bold
-            '>Toys Store</h3>
+            '>Toys Zone</h3>
             Providing reliable tech since 1992
           </Link>
         </div>

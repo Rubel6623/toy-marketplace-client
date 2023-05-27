@@ -1,9 +1,11 @@
 /* eslint-disable no-unused-vars */
 import { useLoaderData } from "react-router-dom";
 import MyToysRow from "./MyToysRow";
+import { useState } from "react";
 
 const MyToy = () => {
-    const myToy=useLoaderData();
+    const loadedMyToy=useLoaderData();
+    const [toys,setToys]=useState(loadedMyToy)
     return (
         <div className="overflow-x-auto w-full">
         <table className="table w-full">
@@ -23,8 +25,8 @@ const MyToy = () => {
           <tbody>
   
             {
-              myToy.map((toy) => (
-              <MyToysRow key={toy._id} toy={toy}></MyToysRow>
+              toys.map((toy) => (
+              <MyToysRow key={toy._id} toy={toy} toys={toys} setToys={setToys}></MyToysRow>
             ))
             }
           </tbody>
