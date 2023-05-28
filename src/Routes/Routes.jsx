@@ -28,17 +28,17 @@ const router = createBrowserRouter([
         {
           path:'/allToys',
           element:<AllToys></AllToys>,
-          loader:()=>fetch('http://localhost:5000/allToys')
+          loader:()=>fetch('https://toy-marketplace-server-iota-jet.vercel.app/allToys')
         },
         {
           path:'/myToy',
           element:<PrivateRoute><MyToy></MyToy></PrivateRoute>,
-          loader:()=>fetch('http://localhost:5000/toy')
+          loader:()=>fetch('https://toy-marketplace-server-iota-jet.vercel.app/toy')
         },
         {
           path:'/updateToy/:id',
           element:<UpdateToy></UpdateToy>,
-          loader:({params})=>fetch(`http://localhost:5000/toy/${params.id}`)
+          loader:({params})=>fetch(`https://toy-marketplace-server-iota-jet.vercel.app/toy/${params.id}`)
         },
         {
           path:'/blog',
@@ -59,17 +59,17 @@ const router = createBrowserRouter([
         {
           path:'/details/:id',
           element:<PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
-          loader:({params})=>fetch(`http://localhost:5000/toys/${params.id}`)
+          loader:({params})=>fetch(`https://toy-marketplace-server-iota-jet.vercel.app/toys/${params.id}`)
         },
         {
           path:'/mathToys/:id',
           element:<PrivateRoute><MathToys></MathToys></PrivateRoute>,
-          loader:({params})=>fetch(`http://localhost:5000/mathToys/${params.id}`)
+          loader:({params})=>fetch(`https://toy-marketplace-server-iota-jet.vercel.app/mathToys/${params.id}`)
         },
         {
           path:'/allToys/:id',
           element:<PrivateRoute><AllToyDetails></AllToyDetails></PrivateRoute>,
-          loader:({params})=>fetch(`http://localhost:5000/allToys/${params.id}`)
+          loader:({params})=>fetch(`https://toy-marketplace-server-iota-jet.vercel.app/allToys/${params.id}`)
         }
       ]
     },

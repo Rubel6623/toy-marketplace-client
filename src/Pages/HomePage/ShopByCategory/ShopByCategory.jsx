@@ -9,13 +9,13 @@ const ShopByCategory = () => {
   const [mathToys,setMathToys]=useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:5000/toys')
+    fetch('https://toy-marketplace-server-iota-jet.vercel.app/toys')
     .then(res=>res.json())
     .then(data=>setToys(data))
   },[])
 
   useEffect(()=>{
-    fetch('http://localhost:5000/mathToys')
+    fetch('https://toy-marketplace-server-iota-jet.vercel.app/mathToys')
     .then(res=>res.json())
     .then(data=>setMathToys(data))
   },[])

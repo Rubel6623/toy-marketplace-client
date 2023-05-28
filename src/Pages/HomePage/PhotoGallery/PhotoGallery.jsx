@@ -5,7 +5,9 @@ import img4 from '../../../assets/banner/banner5.jpg'
 
 const PhotoGallery = () => {
   return (
-    <div>
+    <div         data-aos="fade-up"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000" >
         <div className='text-center mt-5 mb-6'>
             <h2 className='text-5xl font-semibold'>Recent PhotoShoots</h2>
             <p className='text-info'>Check Photo Gallery</p>

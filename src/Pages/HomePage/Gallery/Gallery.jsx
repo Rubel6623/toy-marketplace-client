@@ -12,7 +12,7 @@ const Gallery = () => {
       </h2>
       <div className=" grid md:grid-cols-3 lg:grid-cols-4 md:gap-6 gap-6">
         {/* card-1 */}
-        <div className="card w-96 glass shadow-2xl">
+        <div data-aos="fade-up" className="card w-96 glass shadow-2xl">
           <figure>
             <img
               className="h-60 w-72"
@@ -43,7 +43,7 @@ const Gallery = () => {
           </div>
         </div>
         {/* card-2 */}
-        <div className="card w-96 glass shadow-2xl">
+        <div data-aos="fade-up" className="card w-96 glass shadow-2xl">
           <figure>
             <img
               className="px-3"
@@ -76,7 +76,7 @@ const Gallery = () => {
           </div>
         </div>
         {/* card-3 */}
-        <div className="card w-96 glass shadow-2xl">
+        <div data-aos="fade-up" className="card w-96 glass shadow-2xl">
           <figure>
             <img
               className=""
@@ -107,7 +107,7 @@ const Gallery = () => {
           </div>
         </div>
         {/* card-4 */}
-        <div className="card w-96 glass shadow-2xl">
+        <div data-aos="fade-up" className="card w-96 glass shadow-2xl">
           <figure>
             <img
               className="w-"
@@ -138,7 +138,7 @@ const Gallery = () => {
           </div>
         </div>
         {/* card-5 */}
-        <div className="card w-96 glass shadow-2xl">
+        <div data-aos="fade-up" className="card w-96 glass shadow-2xl">
           <figure>
             <img
               className="px-3"
@@ -169,7 +169,7 @@ const Gallery = () => {
           </div>
         </div>
         {/* card-6 */}
-        <div className="card w-96 glass shadow-2xl">
+        <div data-aos="fade-up" className="card w-96 glass shadow-2xl">
           <figure>
             <img
               className="w-"
@@ -200,7 +200,7 @@ const Gallery = () => {
           </div>
         </div>
         {/* card-7 */}
-        <div className="card w-96 glass shadow-2xl">
+        <div data-aos="fade-up" className="card w-96 glass shadow-2xl">
           <figure>
             <img
               className="px-3"
@@ -231,7 +231,7 @@ const Gallery = () => {
           </div>
         </div>
         {/* card-8 */}
-        <div className="card w-96 glass shadow-2xl">
+        <div data-aos="fade-up" className="card w-96 glass shadow-2xl">
           <figure>
             <img
               className="px-3"

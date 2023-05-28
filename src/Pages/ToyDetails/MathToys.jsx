@@ -1,9 +1,12 @@
 import { useLoaderData } from "react-router-dom";
+import useTitle from "../../hooks/useTitle";
 
 
 const MathToys = () => {
     const toys=useLoaderData();
     const {toyName,price,rating,toyImg,sellerName,toySubCategory,description}=toys;
+    useTitle('Toy Details');
+    
     return (
 <div className="card lg:card-side bg-base-100 shadow-xl">
   <figure><img src={toyImg} alt="Album"/></figure>

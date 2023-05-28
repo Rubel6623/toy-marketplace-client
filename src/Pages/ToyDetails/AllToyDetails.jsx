@@ -1,11 +1,14 @@
 import { useLoaderData } from "react-router-dom";
 import {  FaRegStar, FaStar } from 'react-icons/fa';
 import Rating from "react-rating";
+import useTitle from "../../hooks/useTitle";
 
 
 const AllToyDetails = () => {
     const toy=useLoaderData();
     const {toyName,price,rating,toyImg,sellerName,toySubCategory,description}=toy;
+    useTitle('Toy Details');
+    
     return (
 <div className="card lg:card-side bg-base-100 shadow-xl">
   <figure><img src={toyImg} alt="Album"/></figure>

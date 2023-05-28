@@ -9,7 +9,11 @@ const CustomerReview = () => {
         <p className="text-info">Customer Testimonials</p>
       </div>
 
-      <div className="chat chat-start">
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" 
+        className="chat chat-start">
         <div className="chat-image avatar">
           <div className="w-28 rounded-full">
             <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" />
@@ -34,7 +38,11 @@ const CustomerReview = () => {
         </div>
       </div>
 
-      <div className="chat chat-end">
+      <div 
+        data-aos="fade-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        className="chat chat-end">
         <div className="chat-image avatar">
           <div className="w-28 rounded-full">
             <img src="https://wp-media.familytoday.com/2019/11/shutterstock_150908021-550x367.jpg" />
@@ -60,7 +68,11 @@ const CustomerReview = () => {
 
       </div>
 
-      <div className="chat chat-start">
+      <div 
+        data-aos="fade-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        className="chat chat-start">
         <div className="chat-image avatar">
           <div className="w-28 rounded-full">
             <img src="https://www.wisebread.com/files/fruganomics/imagecache/605x340/blog-images/thumbs-up-474875961.jpg" />

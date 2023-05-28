@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import img from '../../assets/login/login.svg';
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import useTitle from "../../hooks/useTitle";
 
 
 const SignUp = () => {
@@ -9,6 +10,7 @@ const SignUp = () => {
   const {createUser}=useContext(AuthContext);
   const [error,setError]=useState('');
   const navigate=useNavigate();
+  useTitle('Sign Up')
 
   const handleSignIn=(event)=>{
     event.preventDefault();

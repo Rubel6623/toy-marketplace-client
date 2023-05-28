@@ -2,10 +2,13 @@
 import { useLoaderData } from "react-router-dom";
 import MyToysRow from "./MyToysRow";
 import { useState } from "react";
+import useTitle from "../../hooks/useTitle";
 
 const MyToy = () => {
     const loadedMyToy=useLoaderData();
-    const [toys,setToys]=useState(loadedMyToy)
+    const [toys,setToys]=useState(loadedMyToy);
+    useTitle('My Toys');
+
     return (
         <div className="overflow-x-auto w-full">
         <table className="table w-full">
